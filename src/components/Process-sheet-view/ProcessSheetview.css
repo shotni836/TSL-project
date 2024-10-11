@@ -1,0 +1,230 @@
+.ProcessSheetViewPageSection {
+    border: none !important;
+    margin: 0 !important;
+    padding: 10px 0 !important;
+    background: #fff !important;
+    width: 100% !important;
+}
+
+.ProcessSheetViewPageSection .ProcessSheetViewHeaderDetails {
+    background: #fff;
+    border-left: 1px solid #999999;
+    border-right: 1px solid #999999;
+}
+
+.ProcessSheetViewPageSection .ProcessSheetViewHeaderDetails form .form-group {
+    display: flex;
+    align-items: center;
+    margin: 6px 6px;
+}
+
+.ProcessSheetViewPageSection .ProcessSheetViewHeaderDetails form .form-group label {
+    min-width: 140px;
+    font-size: 14px;
+}
+
+.ProcessSheetViewPageSection .ProcessSheetViewHeaderDetails form .form-group h4 {
+    font-size: 14px;
+    color: #000000;
+    font-family: "Myriad Pro Regular";
+    margin: 0;
+}
+
+.ProcessSheetViewTableDetails {
+    background: #fff;
+}
+
+.ProcessSheetViewTableDetails table {
+    margin-top: 0 !important;
+}
+
+.ProcessSheetViewTableDetails .Remarksform-group {
+    width: 100% !important;
+    margin: 0 0 20px 0 !important;
+    text-align: left;
+}
+
+.ProcessSheetViewTableDetails .Remarksform-group label {
+    display: block;
+    margin-bottom: 6px;
+}
+
+.ProcessSheetViewTableDetails .SubmitBtn {
+    float: right;
+}
+
+.ProcessSheetView .fadedIcon {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    background: #fff;
+    padding: 10px;
+}
+
+.ProcessSheetView .fadedIcon li {
+    display: flex;
+    align-items: center;
+    font-size: 12px;
+    margin-left: 10px;
+    font-weight: 600;
+    color: #101010;
+    background: white;
+    padding: 6px 10px;
+    border-radius: 4px;
+    border: 1px solid #c9c9c9;
+    cursor: pointer;
+}
+
+.ProcessSheetView li i {
+    margin-right: 5px;
+    cursor: pointer;
+    font-size: 1.25rem;
+}
+
+.ProcessSheetViewTableDetails table tr td {
+    border-bottom: 2px solid #999999 !important;
+    border-collapse: collapse;
+}
+
+.ProcessSheetViewHeaderDetails form h4 {
+    font-family: "Myriad Pro Light" !important;
+    line-height: normal !important;
+    padding-left: 10px !important;
+}
+
+.ProcessSheetViewHeaderDetails form .form-group {
+    align-items: baseline !important;
+}
+
+.ProcessSheetViewTableDetails table tr th {
+    border: 1px solid #999999;
+    padding: 4px 10px;
+    font-size: 12px;
+}
+
+.ProcessSheetViewTableDetails table tr td {
+    border: 1px solid #999999;
+    padding: 4px 10px;
+    font-size: 12px;
+    border-collapse: collapse;
+}
+
+.ProcessSheetViewPageSection .HeaderDataSection p {
+    font-size: 14px !important;
+}
+
+.ProcessSheetViewPageSection .ReportDetailsSection table tr th {
+    font-size: 14px !important;
+}
+
+.ProcessSheetViewPageSection .ReportDetailsSection table tr td {
+    font-size: 14px !important;
+    border-collapse: collapse;
+}
+
+.ProcessSheetViewPageSection .ReporttableSection table tr th {
+    font-size: 14px !important;
+    padding: 0 6px;
+}
+
+.ProcessSheetViewPageSection .ReporttableSection table tr td {
+    font-size: 14px !important;
+    padding: 0 6px;
+    border-bottom: none !important;
+    border-collapse: collapse;
+}
+
+@media print {
+    .ProcessSheetViewTableDetails table {
+        border-collapse: collapse;
+        width: 100%;
+    }
+
+    .hidethisforprint {
+        display: none;
+    }
+
+    .ProcessSheetViewTableDetails table thead {
+        display: table-header-group;
+    }
+
+    .ProcessSheetViewTableDetails table tfoot {
+        display: table-footer-group;
+    }
+
+    .ProcessSheetViewTableDetails table tr,
+    .ProcessSheetViewTableDetails table td,
+    .ProcessSheetViewTableDetails table th {
+        border: 1px solid black;
+        padding: 8px;
+        text-align: left;
+    }
+
+    .ProcessSheetViewTableDetails table .page-break {
+        page-break-before: always;
+    }
+}
+
+.ProcessSheetViewTableDetails .Remarksform-group.EffectiveDateDiv {
+    width: 40% !important;
+    margin-right: 50px !important;
+}
+
+.QCSignatureImg {
+    width: 150px;
+    min-width: 150px;
+    max-width: 150px;
+    margin-top: 0;
+}
+
+.pdf-content {
+    padding: 20px;
+    background: white;
+}
+
+/* Styles for the table */
+.pdf-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    border: 1px solid #ddd;
+    table-layout: auto;
+}
+
+/* Fixed header styles */
+.fixed-header th {
+    background-color: #f8f8f8;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    border: 1px solid #ddd;
+    text-align: center;
+    background: white;
+}
+
+/* Table cell borders */
+.pdf-table th,
+.pdf-table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+    word-wrap: break-word;
+    width: auto;
+}
+
+/* Print media query to replicate the header on each new page */
+@media print {
+    .fixed-header {
+        display: table-header-group;
+        /* Forces header to repeat on each page */
+    }
+
+    .hidethisforprint {
+        display: none;
+    }
+
+    .pdf-table tbody tr {
+        page-break-inside: avoid;
+        /* Avoids breaking rows across pages */
+    }
+}
